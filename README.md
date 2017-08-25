@@ -1,2 +1,0 @@
-# LeetCodeC
-LeetCode in C

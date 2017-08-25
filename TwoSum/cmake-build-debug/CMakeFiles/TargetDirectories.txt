@@ -1,3 +1,0 @@
-C:/Git/CLeetCode/TwoSum/cmake-build-debug/CMakeFiles/TwoSum.dir
-C:/Git/CLeetCode/TwoSum/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Git/CLeetCode/TwoSum/cmake-build-debug/CMakeFiles/rebuild_cache.dir
