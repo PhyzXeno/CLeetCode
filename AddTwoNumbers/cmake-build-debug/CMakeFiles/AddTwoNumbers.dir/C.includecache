@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Git/CLeetCode/AddTwoNumbers/addTwoNumbers.h
-malloc.h
--
-
 C:/Git/CLeetCode/AddTwoNumbers/main.c
 stdio.h
 -
-addTwoNumbers.h
-C:/Git/CLeetCode/AddTwoNumbers/addTwoNumbers.h
+malloc.h
+-
+myTwoSum.h
+C:/Git/CLeetCode/AddTwoNumbers/myTwoSum.h
+
+C:/Git/CLeetCode/AddTwoNumbers/myTwoSum.h
 

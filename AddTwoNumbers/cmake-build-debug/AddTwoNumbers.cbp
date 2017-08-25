@@ -40,7 +40,6 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Git/CLeetCode/AddTwoNumbers/cmake-build-debug/Makefile&quot;  VERBOSE=1 AddTwoNumbers"/>
@@ -62,7 +61,6 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/5.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Git/CLeetCode/AddTwoNumbers/cmake-build-debug/Makefile&quot;  VERBOSE=1 AddTwoNumbers/fast"/>
@@ -82,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Git/CLeetCode/AddTwoNumbers/addTwoNumbers.h">
-			<Option target="AddTwoNumbers"/>
-		</Unit>
 		<Unit filename="C:/Git/CLeetCode/AddTwoNumbers/main.c">
 			<Option target="AddTwoNumbers"/>
 		</Unit>

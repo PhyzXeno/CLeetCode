@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "addTwoNumbers.h"
+#include <malloc.h>
+#include "myTwoSum.h"
 
 int main() {
     struct ListNode *l1 = (struct ListNode *) malloc(sizeof(struct ListNode));
@@ -26,5 +27,5 @@ int main() {
     struct ListNode *temp = NULL;
     temp = addTwoNumbers(l1, l2);
 
-    printf("temp: %d->%d->%d\n", temp->val, temp->next->val, temp->next->next->val); 
+    printf("temp: %d->%d->%d\n", temp->val, temp->next->val, temp->next->next->val);
 }
