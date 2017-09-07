@@ -139,7 +139,7 @@ int remove_curnext_from_list(node_t ** cur)
     return retval;
 }
 
-void NumberOffGame(int m)
+void NumberOffGame(int m, char *output)
 {
     int i = 0;
     int count = 0;
@@ -184,10 +184,38 @@ void NumberOffGame(int m)
 
     while(1)
     {
-        printf("%d,",current->val);
+        if(current->val < current->next->val)
+            continue;
         current = current->next;
-        if(current->val == temp_node->val)
-            break;
+        break;
+//        if(current->val == temp_node->val)
+//            break;
+    }
 
+    i = 0;
+
+    while(1)
+    {
+        if(current->val < current->next->val)
+        {
+            while(current->val > 0)
+            {
+                *(output + i) = current->val % 10 + '0';
+                current->val = current->val / 10;
+                i++;
+            }
+            *(output + i) = ',';
+            i++;
+            current = current->next;
+            continue;
+        }
+        while(current->val > 0)
+        {
+            *(output + i) = current->val % 10 + '0';
+            current->val = current->val / 10;
+            i++;
+        }
+        *(output + i) = '\0';
+        break;
     }
 }
