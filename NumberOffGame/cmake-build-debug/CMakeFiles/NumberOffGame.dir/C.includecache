@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Git/CLeetCode/NumberOffGame/NumberOffGame.h
+malloc.h
+-
+
+C:/Git/CLeetCode/NumberOffGame/main.c
+stdio.h
+-
+NumberOffGame.h
+C:/Git/CLeetCode/NumberOffGame/NumberOffGame.h
+
