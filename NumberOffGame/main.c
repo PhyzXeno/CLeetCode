@@ -3,7 +3,7 @@
 
 int main() {
     char * output = (char *)malloc(500 * sizeof(char));
-    NumberOffGame(4, output);
+    NumberOffGame(6, output);
     printf("%s\n", output);
     return 0;
 }
