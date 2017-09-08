@@ -43,7 +43,7 @@ int lengthOfLongestSubstring(char* s)
         len = (unsigned int)(stop - start);
         tempStart = start;
     }
-
     snprintf(output, len + 1, "%s", tempStart);
-    printf("%s", output);
+    printf("%s\n", output);
+    return len;
 }
