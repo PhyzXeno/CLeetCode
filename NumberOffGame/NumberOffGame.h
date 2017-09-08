@@ -142,6 +142,7 @@ int remove_curnext_from_list(node_t ** cur)
 void NumberOffGame(int m, char *output)
 {
     int i = 0;
+    int j = 0;
     int count = 0;
     int retval = 0;
     int node_left = 100;
@@ -185,37 +186,55 @@ void NumberOffGame(int m, char *output)
     while(1)
     {
         if(current->val < current->next->val)
+        {
+            current = current->next;
             continue;
-        current = current->next;
-        break;
-//        if(current->val == temp_node->val)
-//            break;
+        }
+        else{
+            current = current->next;
+            break;
+        }
     }
-
-    i = 0;
 
     while(1)
     {
         if(current->val < current->next->val)
         {
-            while(current->val > 0)
-            {
-                *(output + i) = current->val % 10 + '0';
-                current->val = current->val / 10;
-                i++;
-            }
-            *(output + i) = ',';
-            i++;
+//            printf("%d,", current->val);
+            j += sprintf(output + j, "%d", current->val);
+            j += sprintf(output + j, "%c", ',');
             current = current->next;
             continue;
         }
-        while(current->val > 0)
-        {
-            *(output + i) = current->val % 10 + '0';
-            current->val = current->val / 10;
-            i++;
-        }
-        *(output + i) = '\0';
+//        printf("%d",current->val);
+        j += sprintf(output + j, "%d", current->val);
         break;
     }
+
+//    i = 0;
+//
+//    while(1)
+//    {
+//        if(current->val < current->next->val)
+//        {
+//            while(current->val > 0)
+//            {
+//                *(output + i) = current->val % 10 + '0';
+//                current->val = current->val / 10;
+//                i++;
+//            }
+//            *(output + i) = ',';
+//            i++;
+//            current = current->next;
+//            continue;
+//        }
+//        while(current->val > 0)
+//        {
+//            *(output + i) = current->val % 10 + '0';
+//            current->val = current->val / 10;
+//            i++;
+//        }
+//        *(output + i) = '\0';
+//        break;
+//    }
 }
