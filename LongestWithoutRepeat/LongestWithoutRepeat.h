@@ -1,31 +1,49 @@
-//
-// Created by phyzx on 2017/8/25.
-//
+#include <stdio.h>
+#include <malloc.h>
+#include <string.h>
 
 #ifndef LONGESTWITHOUTREPEAT_LONGESTWITHOUTREPEAT_H
 #define LONGESTWITHOUTREPEAT_LONGESTWITHOUTREPEAT_H
 
 #endif //LONGESTWITHOUTREPEAT_LONGESTWITHOUTREPEAT_H
 
-int lengthOfLongestSubstring(char* s) {
-    char* end = s;
-    char* temp = NULL;
-    char* addressTable[128] = {NULL};
-    int len = 0;
+int lengthOfLongestSubstring(char* s)
+{
+    unsigned int addressTable[128] = {0};
+    char * start = NULL;
+    char * stop = NULL;
+    char * tempStart = NULL;
+    unsigned int len = 0;
+    char * output = (char *)malloc(100 * sizeof(char));
 
-    while(*end)
+    start = s;
+    stop = s;
+
+    if(strlen(s) == 1)
+        return 1;
+
+    while(*stop)
     {
-        temp = addressTable[*end];
-        addressTable[*end] = end;
-
-        if(temp >= s)
+        if((unsigned int)stop > addressTable[*stop] && addressTable[*stop] != 0)
         {
-            len = end - s > len ? end - s : len;
-            s = temp + 1;
+            if((unsigned int)(stop - start) >= len)
+            {
+                len = (unsigned int)(stop - start);
+//                snprintf(output, len + 1, "%s", start);
+//                printf("%s", output);
+                tempStart = start;
+                start = stop;
+            }
         }
-        end++;
+        addressTable[*stop] = (unsigned int)stop;
+        stop++;
     }
-    len = end - s > len ? end - s : len;
-    return len;
-}
+    if(len == 0)
+    {
+        len = (unsigned int)(stop - start);
+        tempStart = start;
+    }
 
+    snprintf(output, len + 1, "%s", tempStart);
+    printf("%s", output);
+}

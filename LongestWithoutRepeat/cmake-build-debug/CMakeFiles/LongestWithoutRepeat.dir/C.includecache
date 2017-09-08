@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Git/CLeetCode/LongestWithoutRepeat/LongestWithoutRepeat.h
+stdio.h
+-
+malloc.h
+-
+string.h
+-
+
+C:/Git/CLeetCode/LongestWithoutRepeat/main.c
+stdio.h
+-
+malloc.h
+-
+string.h
+-
+LongestWithoutRepeat.h
+C:/Git/CLeetCode/LongestWithoutRepeat/LongestWithoutRepeat.h
+
