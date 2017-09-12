@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Git/CLeetCode/LongestWithoutRepeat/main.c" "C:/Git/CLeetCode/LongestWithoutRepeat/cmake-build-debug/CMakeFiles/LongestWithoutRepeat.dir/main.c.obj"
+  "/Volumes/OS/Git/CLeetCode/LongestWithoutRepeat/main.c" "/Volumes/OS/Git/CLeetCode/LongestWithoutRepeat/cmake-build-debug/CMakeFiles/LongestWithoutRepeat.dir/main.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

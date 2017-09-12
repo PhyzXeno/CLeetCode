@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LongestWithoutRepeat.dir/main.c.obj"
+  "CMakeFiles/LongestWithoutRepeat.dir/main.c.o"
   "LongestWithoutRepeat.pdb"
-  "LongestWithoutRepeat.exe"
-  "LongestWithoutRepeat.exe.manifest"
-  "libLongestWithoutRepeat.dll.a"
+  "LongestWithoutRepeat"
 )
 
 # Per-language clean rules from dependency scanning.
